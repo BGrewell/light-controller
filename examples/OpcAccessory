@@ -1,0 +1,28 @@
+{
+  "bridge": {
+    "name": "HomebridgePi",
+    "username": "CD:23:3D:A3:BF:32",
+    "port": 51827,
+    "pin": "194-29-542"
+  },
+  
+  "description": "RaspberryPi Homebridge",
+  "ports": {
+    "start": 52100,
+    "end": 52150,
+    "comment": "This section is used to control the range of ports that separate accessory (like camera or television) should be bind to."
+   },
+
+   "accessories": [
+    {
+      "accessory": "OpcAccessory",
+      "name": "LED Strip 1",
+      "host": "localhost",
+      "port": 7890,
+
+      "lightbulbs": [
+	{ "name": "Strand", "map": [ [0, 0, 60] ] },
+	{ "name": "Bedroom", "map": [ [0, 0, 60] ] }
+      ]
+    }] 
+}
