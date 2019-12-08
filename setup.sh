@@ -21,7 +21,7 @@ sudo npm install -g homebridge-gpio-rgb-ledstrip --unsafe-perm=true --allow-root
 
 # create the homebridge config
 mkdir ~/.homebridge
-cat <<EOF >> ~/.homebridge/config.json
+cat <<EOF >> /root/.homebridge/config.json
 {
   "bridge": {
     "name": "HomebridgePi",
