@@ -42,8 +42,8 @@ cat <<EOF >> /root/.homebridge/config.json
       "accessory": "SmartLedStrip",
       "name": "Theater Lights",
       "rPin": 22,
-      "gPin": 24,
-      "bPin": 17
+      "gPin": 17,
+      "bPin": 24
     }] 
 }
 EOF
